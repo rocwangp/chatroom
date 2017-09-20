@@ -12,7 +12,15 @@
 #include <sys/types.h>
 #include <netinet/in.h>
 #include <arpa/inet.h>
+#include <fcntl.h>
 
+#include <cstdio>
+#include <cerrno>
+#include <cstdlib>
+#include <unistd.h>
+#include <memory.h>
+
+#include <iostream>
 #include <string>
 
 const int MAXCONNECTION = 5;

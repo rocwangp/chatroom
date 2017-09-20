@@ -11,6 +11,9 @@
 #include "Socket.h"
 #include "SocketException.h"
 
+#include <cerrno>
+
+#include <iostream>
 #include <string>
 
 class ClientSocket : public Socket

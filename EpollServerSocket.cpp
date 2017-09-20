@@ -6,16 +6,8 @@
  ************************************************************************/
 
 #include "EpollServerSocket.h"
-#include "SocketException.h"
-#include "Socket.h"
 
-#include <iostream>
-#include <errno.h>
-#include <sys/types.h>
-#include <unistd.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <signal.h>
+
 
 std::map<int, Socket*> EpollServerSocket::m_clientMap;
 

@@ -7,16 +7,6 @@
 
 #include "Socket.h"
 
-#include <stdio.h>
-#include <fcntl.h>
-#include <sys/types.h>
-#include <memory.h>
-#include <unistd.h>
-#include <errno.h>
-#include <stdlib.h>
-
-#include <iostream>
-
 
 Socket::Socket() :
 	m_sockfd(-1)
@@ -27,7 +17,7 @@ Socket::Socket() :
 Socket::~Socket()
 {
 	if(isValid())
-		::close(m_sockfd);
+		close(m_sockfd);
 }
 
 bool Socket::isValid() const

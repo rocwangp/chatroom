@@ -7,8 +7,6 @@
 
 #include "ClientSocket.h"
 
-#include <errno.h>
-#include <iostream>
 ClientSocket::ClientSocket(const std::string& host, const int port)
 {
 	if(!Socket::Create())

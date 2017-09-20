@@ -7,8 +7,17 @@
 
 #include "Epoll.h"
 #include "Socket.h"
+#include "SocketException.h"
 
+#include <iostream>
+#include <cerrno>
+#include <cstdio>
+#include <cstdlib>
+#include <unistd.h>
 #include <map>
+
+#include <signal.h>
+#include <sys/types.h>
 
 class EpollServerSocket : public Socket
 {

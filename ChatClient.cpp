@@ -48,7 +48,7 @@ int main()
 
 	try
 	{
-		ClientSocket clientSocket("127.0.0.1", 9777);
+		ClientSocket clientSocket("127.0.0.1", 9090);
 	//	cout << "create a client and connect to server\n";
 		pthread_t tid;
 		pthread_create(&tid, NULL, sendData, &clientSocket);
